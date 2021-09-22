@@ -1,7 +1,6 @@
 {% set name = "apipkg" %}
-{% set version = "1.5" %}
-{% set hash_type = "sha256" %}
-{% set hash = "37228cda29411948b422fae072f57e31d3396d2ee1c9783775980ee9c9990af6" %}
+{% set version = "2.0.0" %}
+{% set hash = "57ff978a568651da62272034ca5214e61d6f41aa496d695942e0188084ec0298" %}
 
 package:
   name: {{ name }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -20,9 +19,10 @@ build:
 requirements:
   build:
     - pip
-    - setuptools_scm
+    - setuptools_scm    
+    - python >=2.7|>=3.4
   run:
-    - python
+    - python >=2.7|>=3.4
 
 test:
   imports:
