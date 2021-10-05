@@ -1,6 +1,6 @@
 {% set name = "apipkg" %}
-{% set version = "2.0.0" %}
-{% set hash = "57ff978a568651da62272034ca5214e61d6f41aa496d695942e0188084ec0298" %}
+{% set version = "2.0.1" %}
+{% set hash = "a2fa72d2479be4edf4416ea69f8973042548aad0f69e2305a68388d24f378c2d" %}
 
 package:
   name: {{ name }}
@@ -17,9 +17,9 @@ build:
   script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
-  build:
+  host:
     - pip
-    - setuptools_scm    
+    - setuptools_scm
     - python >=2.7|>=3.4
   run:
     - python >=2.7|>=3.4
