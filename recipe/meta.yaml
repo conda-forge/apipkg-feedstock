@@ -1,6 +1,6 @@
 {% set name = "apipkg" %}
-{% set version = "3.0.0" %}
-{% set hash = "f8e504547b753fdff33d126f27b5cfbb5f67864db3ecfdd4bf34aeefb6709bf9" %}
+{% set version = "3.0.1" %}
+{% set hash = "f8c021adafc9132ac2fba9fd3c5768365d0a8c10aa375fb15e329f1fce8a5f01" %}
 
 package:
   name: {{ name }}
