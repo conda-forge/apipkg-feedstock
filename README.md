@@ -1,11 +1,11 @@
-About apipkg
-============
+About apipkg-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apipkg-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytest-dev/apipkg
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apipkg-feedstock/blob/main/LICENSE.txt)
 
 Summary: With apipkg you can control the exported namespace of a python package and greatly reduce the number of imports for your users.
 
